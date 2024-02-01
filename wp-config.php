@@ -21,6 +21,8 @@
 
 // ** Réglages MySQL - Votre hébergeur doit vous fournir ces informations. ** //
 /** Nom de la base de données de WordPress. */
+define('WP_CACHE', true);
+define( 'WPCACHEHOME', '/Applications/MAMP/htdocs/chic-dressing/wp-content/plugins/wp-super-cache/' );
 define( 'DB_NAME', 'chic-dressing' );
 
 /** Utilisateur de la base de données MySQL. */
