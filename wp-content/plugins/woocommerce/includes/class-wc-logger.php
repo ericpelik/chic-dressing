@@ -143,7 +143,7 @@ class WC_Logger implements WC_Logger_Interface {
 
 			foreach ( $this->handlers as $handler ) {
 				/**
-				 * Filter the logging message. Returning null will prevent logging from occuring since 5.3.
+				 * Filter the logging message. Returning null will prevent logging from occurring since 5.3.
 				 *
 				 * @since 3.1
 				 * @param string $message Log message.
@@ -303,6 +303,11 @@ class WC_Logger implements WC_Logger_Interface {
 	 * @since 3.4.0
 	 */
 	public function clear_expired_logs() {
+		/**
+		 * Filter the retention period of log entries.
+		 *
+		 * @param int $days The number of days to retain log entries.
+		 */
 		$days      = absint( apply_filters( 'woocommerce_logger_days_to_retain_logs', 30 ) );
 		$timestamp = strtotime( "-{$days} days" );
 
