@@ -8,7 +8,7 @@
 				<?php if ( has_custom_logo() ) :
 
 				$custom_logo_id = get_theme_mod( 'custom_logo' );
-				$custom_logo 	= wp_get_attachment_image_src( $custom_logo_id , 'full' );
+				$custom_logo 	= wp_get_attachment_image_src( $custom_logo_id , 'medium' );
 
 				?>
 
@@ -19,7 +19,7 @@
 				<?php // SEO Hidden Title
 
 				if ( true === ashe_options( 'title_tagline_seo_title' ) ) {
-					echo ( is_home() || is_front_page() || is_category() || is_search() ) ? '<h1 style="display: none;">'.  get_bloginfo( 'title' ) .'</h1>' : '';
+					echo ( is_home() || is_front_page() || is_category() || is_search() ) ? '<h2 style="display: none;">'.  get_bloginfo( 'title' ) .'</h2>' : '';
 				}
 
 				?>
@@ -27,9 +27,9 @@
 				<?php else : ?>
 
 					<?php if ( is_home() || is_front_page() ) : ?>
-					<h1>
+					<h2>
 						<a href="<?php echo esc_url( home_url('/') ); ?>" class="header-logo-a"><?php echo bloginfo( 'title' ); ?></a>
-					</h1>
+					</h2>
 					<?php else : ?>
 					<a href="<?php echo esc_url( home_url('/') ); ?>" class="header-logo-a"><?php echo bloginfo( 'title' ); ?></a>
 					<?php endif; ?>
