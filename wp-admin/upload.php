@@ -251,7 +251,6 @@ if ( 'grid' === $mode ) {
 $wp_list_table = _get_list_table( 'WP_Media_List_Table' );
 $pagenum       = $wp_list_table->get_pagenum();
 
-
 // Handle bulk actions.
 $doaction = $wp_list_table->current_action();
 
@@ -459,5 +458,6 @@ if ( ! empty( $message ) ) {
 <?php find_posts_div(); ?>
 </form>
 </div>
+
 <?php
 require_once ABSPATH . 'wp-admin/admin-footer.php';
