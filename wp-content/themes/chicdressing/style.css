@@ -14,6 +14,38 @@ Text Domain:	 chicdressing
     Add your custom styles here
 */
 
+@font-face {
+    font-family: "kalam";
+    src:
+      local("kalam"),
+      url("./fonts/Kalam/Kalam-Bold.ttf") format("truetype"),
+      url("./fonts/Kalam/Kalam-Light.ttf") format("truetype"),
+      url("./fonts/Kalam/Kalam-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "open_sans";
+    src:
+      local("open_sans"),
+      url("./fonts/Open_Sans/OpenSans-Italic-VariableFont_wdth\,wght.ttf") format("truetype"),
+      url("./fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf") format("truetype"),
+}
+
+@font-face {
+    font-family: "playfair";
+    src:
+      local("playfair"),
+      url("./fonts/Playfair/Playfair-Italic-VariableFont_opsz\,wdth\,wght.ttf") format("truetype"),
+      url("./fonts/Playfair/Playfair-VariableFont_opsz\,wdth\,wght.ttf") format("truetype"),
+}
+
+@font-face {
+    font-family: "rokkitt";
+    src:
+      local("rokkitt"),
+      url("./fonts/Rokkitt/Rokkitt-Italic-VariableFont_wght.ttf") format("truetype"),
+      url("./fonts/Rokkitt/Rokkitt-VariableFont_wght.ttf") format("truetype"),
+}
 
 body .page-content, .page-content select, .page-content input, .page-content textarea, .page-content .post-author a, .page-content .ashe-widget a, .page-content .comment-author {
     color: #a5a5a5;
