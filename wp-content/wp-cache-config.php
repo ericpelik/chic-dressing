@@ -5,6 +5,7 @@ WP-Cache Config Sample File
 See wp-cache.php for author details.
 */
 
+$wp_cache_debug_username = 'cd3187a493583dfe60263859e79563d0';
 $wp_cache_mobile_groups = '';
 $wp_cache_home_path = '/chic-dressing/';
 $wp_cache_slash_check = 1;
@@ -65,7 +66,7 @@ $wp_cache_debug_to_file = 0;
 $wp_super_cache_debug = 0;
 $wp_cache_debug_level = 5;
 $wp_cache_debug_ip = '';
-$wp_cache_debug_log = '';
+$wp_cache_debug_log = '7ad40d4b67588630a710c163a44d7b03.php';
 $wp_cache_debug_email = '';
 $wp_cache_pages[ "search" ] = 0;
 $wp_cache_pages[ "feed" ] = 0;
